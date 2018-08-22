@@ -825,7 +825,7 @@ export default {
 			that.reset();
 			that.loading = 1;
 			that.setStep(3);
-			axios.post(url, createImgUrl).then(
+			axios.post(url, fmData).then(
 				// 上传成功
 				function(resData) {
 					if (that.value) {
